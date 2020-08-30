@@ -20,7 +20,7 @@ except ImportError:
 
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
-# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/TheSpeedX/TBomb
+# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/SiddharthGupta7319/Super-fast-sms-bomber-
 # If You Wanna Take Credits For This Code, Please Look Yourself Again
 
 country_codes = {
@@ -281,7 +281,7 @@ def infinite(pn, dl, ch, max):
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
         count_inf += 1
-        # os.system('echo SpeedX >> count.xxx')
+        # os.system('echo Deshi Dêvëløpēr >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
             exit()
@@ -443,7 +443,7 @@ def start(target, counter, delay, ch, cc):
                 else:
                     print('\n\n\tSorry Your Country is Not Supported...')
                     print(
-                        '\t\tPlease Send A Mail To ggspeedx29@gmail.com To Let Us Know...')
+                        '\t\tPlease Send A Mail To a12345678ggj@gmail.com To Let Us Know...')
                     input('Press Enter To Exit...')
                     exit()
         print(random.choice(colors))
@@ -484,7 +484,7 @@ def update():
     stuff_to_update = ['bomber.py', '.version']
     for fl in stuff_to_update:
         dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/" + fl).read()
+            "https://github.com/SiddharthGupta7319/Super-fast-sms-bomber-" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
@@ -515,7 +515,7 @@ if ver != verl:
     print('\tStarting Update...')
     update()
 print("Your Version is Up-To-Date")
-print('\n\n\t\t\tStarting TBomb...\n\n')
+print('\n\n\t\t\tStarting smsBomb...\n\n')
 try:
     noti = urllib.request.urlopen(
         "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.notify").read().decode('utf-8')
@@ -552,11 +552,11 @@ try:
 except Exception:
     type = 0
 if type == 1:
-    nm = int(input("Enter Number of Calls To Send(Maximum 1005): "))
-    if nm > 1005:
+    nm = int(input("Enter Number of Calls To Send(Maximum 100000): "))
+    if nm > 100000000:
         print("\t\tYou Have Entered " + str(nm) +
-              ".\n\tNormalizing Value To 1005")
-        nm = 1005
+              ".\n\tNormalizing Value To 100000000")
+        nm = 100000000
     dl = float(input("Enter Delay time (in seconds) [Recommended 5 sec ] : "))
 elif type == 0:
     if cc == "91":
